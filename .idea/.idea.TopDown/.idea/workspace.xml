@@ -8,9 +8,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Handlers/TargetHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pickup/PickupManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PickupObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PickupBundleObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/View/ScreenView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ComonComponents/MoveToTargetAndDestroy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -40,6 +42,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ComonComponents/MovingToTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PickupObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PickupBundleObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnPickup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/View/InventorySlotView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Controller/InventorySlotController.cs" />
       </list>
     </option>
   </component>
@@ -84,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711531916267</updated>
-      <workItem from="1711531924579" duration="17677000" />
+      <workItem from="1711531924579" duration="20733000" />
     </task>
     <servers />
   </component>
@@ -165,13 +172,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="126" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1711551104079" />
-    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1711546244729">
+    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1711554859110">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1711546244729" />
-    <state x="567" y="253" width="785" height="534" key="find.popup" timestamp="1711551324609">
+    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1711554859110" />
+    <state x="567" y="253" width="785" height="534" key="find.popup" timestamp="1711555404118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="253" width="785" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1711551324609" />
+    <state x="567" y="253" width="785" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1711555404118" />
   </component>
 </project>
