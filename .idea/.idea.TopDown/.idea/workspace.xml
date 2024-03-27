@@ -10,6 +10,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Handlers/TargetHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pickup/PickupManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PickupObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ComonComponents/MoveToTargetAndDestroy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -34,10 +35,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/BulletManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyMoving.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pickup/PickupManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ComonComponents/MovingToTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PickupObject.cs" />
       </list>
     </option>
   </component>
@@ -82,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711531916267</updated>
-      <workItem from="1711531924579" duration="16888000" />
+      <workItem from="1711531924579" duration="17677000" />
     </task>
     <servers />
   </component>

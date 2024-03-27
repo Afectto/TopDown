@@ -80,6 +80,12 @@
             <e p="PlayerManager.cs" t="Include" />
             <e p="RotatePlayer.cs" t="Include" />
           </e>
+          <e p="ScriptableObject" t="Include">
+            <e p="PickupObject.cs" t="Include" />
+          </e>
+          <e p="Spawners" t="Include">
+            <e p="SpawnPickup.cs" t="Include" />
+          </e>
           <e p="Utils.cs" t="Include" />
           <e p="Weapon" t="Include">
             <e p="BulletManager.cs" t="Include" />
