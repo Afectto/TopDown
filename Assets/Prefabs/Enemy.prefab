@@ -364,8 +364,9 @@ GameObject:
   - component: {fileID: 7697101150060879989}
   - component: {fileID: 7697101150060879988}
   - component: {fileID: 7084393548400141059}
-  - component: {fileID: 7697101150060879991}
   - component: {fileID: 7697101150060879990}
+  - component: {fileID: 1380348027284805297}
+  - component: {fileID: 2841206903230546504}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -428,19 +429,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5131c2d0dd2c34b428f3cf02496d35b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7697101150060879991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7697101150060879993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c06aaa68410fa8d42acbd4e412064821, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: {fileID: 7697101150060879993}
+  attackRange: 0.5
+  followingRange: 3
+  enemyMoving: {fileID: 1380348027284805297}
+  targetHandler: {fileID: 2841206903230546504}
+  skin: {fileID: 7697101150893080633}
 --- !u!114 &7697101150060879990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,6 +444,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6dd54652f1b1e96449afb06159e90bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: {fileID: 7697101150060879993}
+--- !u!114 &1380348027284805297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7697101150060879993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b58ca99be59c70418b01c28d9b36193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: {fileID: 7697101150060879993}
+  speed: 4
+--- !u!114 &2841206903230546504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7697101150060879993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c06aaa68410fa8d42acbd4e412064821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   owner: {fileID: 7697101150060879993}

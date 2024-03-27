@@ -26,7 +26,6 @@ public class BulletManager : MonoBehaviour, IListener
         var damageHandlerTarget = target.GetComponent<DamageHandler>();
         if (damageHandlerTarget)
         {
-            Debug.Log(_damage);
             damageHandlerTarget.SetDamage(_damage);
         }
     }

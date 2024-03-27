@@ -58,8 +58,11 @@
             <e p="Health.cs" t="Include" />
             <e p="MoveToTargetAndDestroy.cs" t="Include" />
             <e p="MoveVelocity.cs" t="Include" />
+            <e p="MovingToTarget.cs" t="Include" />
           </e>
-          <e p="EnemyManager.cs" t="Include" />
+          <e p="Enemy" t="Include">
+            <e p="EnemyManager.cs" t="Include" />
+          </e>
           <e p="Handlers" t="Include">
             <e p="BasedHendlers" t="Include">
               <e p="AbstractTargetHandler.cs" t="Include" />
@@ -70,10 +73,14 @@
           <e p="Interfaces" t="Include">
             <e p="IListener.cs" t="Include" />
           </e>
+          <e p="Pickup" t="Include">
+            <e p="PickupManager.cs" t="Include" />
+          </e>
           <e p="player" t="Include">
             <e p="PlayerManager.cs" t="Include" />
             <e p="RotatePlayer.cs" t="Include" />
           </e>
+          <e p="Utils.cs" t="Include" />
           <e p="Weapon" t="Include">
             <e p="BulletManager.cs" t="Include" />
             <e p="RotateWeapon.cs" t="Include" />
