@@ -47,7 +47,10 @@ public class PickupManager : MonoBehaviour
 
     private void StopRoutine()
     {
-        StopCoroutine(_routine);
+        if (_routine != null)
+        {
+            StopCoroutine(_routine);
+        }
         Destroy(gameObject);
     }
 }

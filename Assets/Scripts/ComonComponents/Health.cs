@@ -8,12 +8,14 @@ public class Health : MonoBehaviour, IListener
     [SerializeField] private float maxHealth = 100;
     [SerializeField] private Image fillHealthBar;
     private float _currentHealth;
+    private bool isAlreadyDie;
 
     public static Action<GameObject> OnOwnerDead;
 
     public void Start()
     {
         _currentHealth = maxHealth;
+        isAlreadyDie = false;
         AddAllListeners();
     }
 
@@ -42,8 +44,9 @@ public class Health : MonoBehaviour, IListener
         
         _currentHealth -= damage;
 
-        if (_currentHealth <= 0)
+        if (!isAlreadyDie && _currentHealth <= 0)
         {
+            isAlreadyDie = true;
             _currentHealth = 0;
             Debug.Log("DEAD");
             OnOwnerDead?.Invoke(owner);
