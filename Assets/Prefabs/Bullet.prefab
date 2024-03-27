@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e82513b4618884cb6b43b6ef002722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetHandler: {fileID: 0}
   moveToTarget: {fileID: 8298545101375835649}
 --- !u!114 &8298545101375835649
 MonoBehaviour:
@@ -61,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: {fileID: 61683686035176418}
-  speed: 5
+  speed: 20
 --- !u!1 &1441746870614114239
 GameObject:
   m_ObjectHideFlags: 0

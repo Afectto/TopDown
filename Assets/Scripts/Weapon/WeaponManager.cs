@@ -10,12 +10,12 @@ public class WeaponManager : AbstractTargetHandler
     [SerializeField] private BulletManager bulletPrefab;
 
     public float RadiusToAttack => radiusToAttack;
-    private bool isCanShoot;
+    private bool _isCanShoot;
 
     public override void Start()
     {
         base.Start();
-        isCanShoot = true;
+        _isCanShoot = true;
     }
 
     private void Update()
@@ -25,7 +25,7 @@ public class WeaponManager : AbstractTargetHandler
 
     private void ShootIfNeeded()
     {
-        if (isCanShoot && _target != null && Vector3.Distance(_target.position, shootElement.position) < radiusToAttack)
+        if (_isCanShoot && _target != null )
         {
             StartCoroutine(ShootRoutine());
         }
@@ -33,11 +33,11 @@ public class WeaponManager : AbstractTargetHandler
 
     private IEnumerator ShootRoutine()
     {
-        isCanShoot = false;
+        _isCanShoot = false;
         var bullet = Instantiate(bulletPrefab, shootElement.position, Quaternion.identity);
         bullet.SetDamage(damage);
         bullet.GetComponent<MoveToTargetAndDestroy>().SetTarget(_target);
         yield return new WaitForSeconds(attackRite);
-        isCanShoot = true;
+        _isCanShoot = true;
     }
 }

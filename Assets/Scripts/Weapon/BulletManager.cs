@@ -10,20 +10,8 @@ public class BulletManager : MonoBehaviour, IListener
     public void Start()
     {
         AddAllListeners();
-
-        StartCoroutine(moveBullet());
     }
-
-    private IEnumerator moveBullet()
-    {
-        while (true)
-        {
-            moveToTarget.MoveObjectToTarget();
-            
-            yield return null;
-        }
-    }
-
+    
     public void AddAllListeners()
     {
         MoveToTargetAndDestroy.OnObjectInTarget += ApplyDamageToTarget;
@@ -50,6 +38,7 @@ public class BulletManager : MonoBehaviour, IListener
 
     private void FixedUpdate()
     {
+        moveToTarget.MoveObjectToTarget();
     }
 
     public void OnDestroy()

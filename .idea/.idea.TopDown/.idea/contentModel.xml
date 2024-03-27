@@ -50,7 +50,6 @@
           <e p="tilemap" t="Include" />
           <e p="Tiles" t="Include" />
         </e>
-        <e p="Prefab" t="Include" />
         <e p="Prefabs" t="Include" />
         <e p="Resources" t="Include">
           <e p="Inventory" t="Include" />
@@ -122,6 +121,7 @@
             <e p="PickupBundleObject.cs" t="Include" />
           </e>
           <e p="Spawners" t="Include">
+            <e p="SpawnEnemy.cs" t="Include" />
             <e p="SpawnPickup.cs" t="Include" />
           </e>
           <e p="Utils.cs" t="Include" />

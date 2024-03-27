@@ -6,7 +6,8 @@ public class InventorySlotView : MonoBehaviour
 {
     [SerializeField] private Image _spriteIcon;
     [SerializeField] private Text _textAmount;
-    
+
+    public static Action<string, int> OnClickSlotAction;
     public Sprite Icon
     {
         get => _spriteIcon.sprite;
@@ -21,5 +22,10 @@ public class InventorySlotView : MonoBehaviour
     {
         get => Convert.ToInt32(_textAmount.text);
         set => _textAmount.text = value.ToString();
+    }
+
+    public void OnClickSlot()
+    {
+        OnClickSlotAction?.Invoke(_spriteIcon.name, Amount);
     }
 }
