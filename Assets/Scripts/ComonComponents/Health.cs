@@ -48,7 +48,6 @@ public class Health : MonoBehaviour, IListener
         {
             isAlreadyDie = true;
             _currentHealth = 0;
-            Debug.Log("DEAD");
             OnOwnerDead?.Invoke(owner);
         }
 
