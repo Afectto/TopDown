@@ -35,7 +35,7 @@ public class BulletManager : MonoBehaviour, IListener
         _damage = damage;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         moveToTarget.MoveObjectToTarget();
     }

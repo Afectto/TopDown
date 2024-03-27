@@ -16,8 +16,8 @@ MonoBehaviour:
   - skin: {fileID: 21300000, guid: d45f0cae013abb84688afe6e4bc52845, type: 3}
     name: Ammo Box
   - skin: {fileID: 21300000, guid: 6532bc2c52f179142a7333cc0f5faeda, type: 3}
-    name: AK-47
+    name: AK-74
   - skin: {fileID: 21300000, guid: 1b4696d341b6ec443b4e499361de0675, type: 3}
     name: Makarov
   - skin: {fileID: 21300000, guid: 1aa8d4e1c6a8e934595f9ab61f2bf8aa, type: 3}
-    name: Helmet
+    name: MilitaryHelmet

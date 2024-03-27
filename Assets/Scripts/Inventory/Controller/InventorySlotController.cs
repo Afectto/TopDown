@@ -25,7 +25,7 @@ public class InventorySlotController
 
     private void onSlotItemAmountChanged(int newAmount)
     {
-        _view.TextAmount.gameObject.SetActive(newAmount < 1);
+        _view.TextAmount.gameObject.SetActive(newAmount > 1);
         
         _view.Amount = newAmount;
     }
