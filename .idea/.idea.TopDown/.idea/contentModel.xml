@@ -10,7 +10,6 @@
       <e p="Assets" t="Include">
         <e p="Image" t="Include">
           <e p="items" t="Include">
-            <e p="оружие" t="Include" />
             <e p="шмотки" t="Include" />
           </e>
           <e p="mutants" t="Include" />
@@ -68,7 +67,6 @@
           <e p="Enemy" t="Include">
             <e p="EnemyManager.cs" t="Include" />
           </e>
-          <e p="EntryPoint.cs" t="Include" />
           <e p="Handlers" t="Include">
             <e p="BasedHendlers" t="Include">
               <e p="AbstractTargetHandler.cs" t="Include" />

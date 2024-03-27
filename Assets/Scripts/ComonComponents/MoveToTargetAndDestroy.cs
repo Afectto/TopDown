@@ -28,8 +28,8 @@ public class MoveToTargetAndDestroy : AbstractTargetHandler
         
         if (transform.position == _lastTargetPosition)
         {
-            OnObjectInTarget?.Invoke(_target);
             Destroy(gameObject);
+            OnObjectInTarget?.Invoke(_target);
         }
     }
 

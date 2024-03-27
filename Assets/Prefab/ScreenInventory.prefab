@@ -105,6 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5306836451664419942}
   - component: {fileID: 2983597942118725739}
+  - component: {fileID: 7647385461735868594}
   m_Layer: 5
   m_Name: ScreenInventory
   m_TagString: Untagged
@@ -146,6 +147,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inventoryView: {fileID: 1514979313627073870}
+--- !u!114 &7647385461735868594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2501950410173002553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bfd6d682c155347b4af4b7cc8ec77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _screenView: {fileID: 2983597942118725739}
 --- !u!1 &4837861540576023947
 GameObject:
   m_ObjectHideFlags: 0

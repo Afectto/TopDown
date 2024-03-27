@@ -151,7 +151,7 @@ public class InventoryGrid : IReadOnlyInventoryGrid
                 else
                 {
                     itemsAddedAmount += remainingAmount;
-                    slot.Amount += newValue;
+                    slot.Amount = newValue;
 
                     remainingAmount = 0;
                     return itemsAddedAmount;
