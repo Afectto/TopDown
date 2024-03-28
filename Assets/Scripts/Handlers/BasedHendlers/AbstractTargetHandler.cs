@@ -10,12 +10,12 @@ public abstract class AbstractTargetHandler : MonoBehaviour, IListener
         AddAllListeners();
     }
 
-    public void AddAllListeners()
+    public virtual void AddAllListeners()
     {
         TargetHandler.OnSetTarget += SetTarget;
     }
 
-    public void RemoveAllListeners()
+    public virtual  void RemoveAllListeners()
     {
         // ReSharper disable once DelegateSubtraction
         TargetHandler.OnSetTarget -= SetTarget;

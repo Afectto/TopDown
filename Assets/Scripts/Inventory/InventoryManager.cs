@@ -44,7 +44,6 @@ public class InventoryManager : MonoBehaviour, IListener
 
     private void OnClearSlotItem(string nameSlotItem, int amount)
     {
-        Debug.Log("ON CLEAR " + nameSlotItem + " " + amount);
         if (amount > 0)
         {
             _inventoryService.RemoveItems(OWNER, nameSlotItem, amount);
@@ -70,12 +69,6 @@ public class InventoryManager : MonoBehaviour, IListener
         return createInventoryData;
     }
     
-    void Update()
-    {
-        
-    }
-
-
     public void OnDestroy()
     {
         RemoveAllListeners();

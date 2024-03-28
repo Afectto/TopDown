@@ -18,9 +18,16 @@ public class WeaponManager : AbstractTargetHandler
         _isCanShoot = true;
     }
 
-    private void Update()
+    public override void AddAllListeners()
     {
-        ShootIfNeeded();
+        base.AddAllListeners();
+        ShootButton.OnClickShootButtonAction += ShootIfNeeded;
+    }
+    
+    public override void RemoveAllListeners()
+    {
+        base.RemoveAllListeners();
+        ShootButton.OnClickShootButtonAction -= ShootIfNeeded;
     }
 
     private void ShootIfNeeded()
