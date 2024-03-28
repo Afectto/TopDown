@@ -39,4 +39,11 @@ public static class Utils
 
         return null;
     }
+    
+    public static Vector3 GetMouseWorldPosition(Vector3 screenPosition)
+    {
+        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+        worldPosition.z = 0;
+        return worldPosition;
+    }
 }

@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour, IListener
 {
-    [SerializeField] private float attackRange;
     [SerializeField] private float followingRange;
     [SerializeField] private MovingToTarget enemyMoving;
     [SerializeField] private TargetHandler targetHandler;
     [SerializeField] private GameObject skin;
+    [SerializeField] private EnemyWeapon enemyWeapon;
     
     private Vector3 _originalPlayerScale;
     
@@ -15,8 +15,7 @@ public class EnemyManager : MonoBehaviour, IListener
         AddAllListeners();
         _originalPlayerScale = skin.transform.localScale;
     }
-
-
+    
     public void AddAllListeners()
     {
         Health.OnOwnerDead += OnDead;
@@ -48,7 +47,7 @@ public class EnemyManager : MonoBehaviour, IListener
         Flip(target);
         
         var distance = Vector3.Distance(transform.position, target.position);
-        if (distance > attackRange)
+        if (distance > enemyWeapon.AttackRange)
         {
             enemyMoving.Move();
         }

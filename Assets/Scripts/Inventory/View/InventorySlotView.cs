@@ -26,6 +26,11 @@ public class InventorySlotView : MonoBehaviour
 
     public void OnClickSlot()
     {
-        OnClickSlotAction?.Invoke(_spriteIcon.name, Amount);
+        var nameSkin = "";
+        if (_spriteIcon.sprite)
+        {
+            nameSkin = Icon.name;
+        }
+        OnClickSlotAction?.Invoke(nameSkin, Amount);
     }
 }

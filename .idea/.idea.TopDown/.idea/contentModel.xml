@@ -57,6 +57,9 @@
         <e p="Scenes" t="Include" />
         <e p="SciptableObject" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="ClearSlotButton" t="Include">
+            <e p="ClearSlotButton.cs" t="Include" />
+          </e>
           <e p="ComonComponents" t="Include">
             <e p="Health.cs" t="Include" />
             <e p="MoveToTargetAndDestroy.cs" t="Include" />
@@ -65,6 +68,7 @@
           </e>
           <e p="Enemy" t="Include">
             <e p="EnemyManager.cs" t="Include" />
+            <e p="EnemyWeapon.cs" t="Include" />
           </e>
           <e p="Handlers" t="Include">
             <e p="BasedHendlers" t="Include">

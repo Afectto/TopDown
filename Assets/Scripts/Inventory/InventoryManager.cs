@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
@@ -9,7 +8,7 @@ public class InventoryManager : MonoBehaviour, IListener
     private InventoryService _inventoryService;
     private ScreenController _screenController;
 
-    [NotNull]private static string OWNER_1 = "Afecto";
+    [NotNull]private static string OWNER = "Afecto";
     private string _currentOwnerId;
     
     public void Start()
@@ -17,28 +16,39 @@ public class InventoryManager : MonoBehaviour, IListener
         AddAllListeners();
         _inventoryService = new InventoryService();
 
-        var inventoryData = CreateInventory(OWNER_1, 2, 3);
+        var inventoryData = CreateInventory(OWNER, 2, 3);
         _inventoryService.RegisterInventory(inventoryData);
 
         _screenController = new ScreenController(_inventoryService, _screenView);
-        _screenController.OpenInventory(OWNER_1);
-        _currentOwnerId = OWNER_1;
+        _screenController.OpenInventory(OWNER);
+        _currentOwnerId = OWNER;
     }
 
     public void AddAllListeners()
     {
+        ClearSlotButton.OnNeedClearSlot += OnClearSlotItem;
         PickupManager.OnPickupItemByPlayer += OnAddNewItem;
     }
 
     public void RemoveAllListeners()
     {
+        ClearSlotButton.OnNeedClearSlot -= OnClearSlotItem;
         PickupManager.OnPickupItemByPlayer -= OnAddNewItem;
     }
     
     private void OnAddNewItem(GameObject obj)
     {
         var pickup = obj.GetComponent<PickupManager>();
-        _inventoryService.AddItemsToInventory(OWNER_1, pickup.Name);
+        _inventoryService.AddItemsToInventory(OWNER, pickup.Name);
+    }
+
+    private void OnClearSlotItem(string nameSlotItem, int amount)
+    {
+        Debug.Log("ON CLEAR " + nameSlotItem + " " + amount);
+        if (amount > 0)
+        {
+            _inventoryService.RemoveItems(OWNER, nameSlotItem, amount);
+        }
     }
 
     private InventoryGridData CreateInventory(string ownerId, int sizeX, int sizeY)
