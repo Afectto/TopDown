@@ -12,13 +12,10 @@ public class InventorySlot : IReadOnlyInventorySlot<Sprite, int>
         get => _data.itemID;
         set
         {
-            if (_data.itemID != value)
-            {
-                _data.itemID = value;
-                var path = "Inventory/" + value;
-                Item = Resources.Load<Sprite>(path);
-                ItemChange?.Invoke(Item);
-            }
+            _data.itemID = value;
+            var path = "Inventory/" + value;
+            Item = Resources.Load<Sprite>(path);
+            ItemChange?.Invoke(Item);
         }
 
     }

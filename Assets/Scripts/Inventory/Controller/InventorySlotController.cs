@@ -10,9 +10,12 @@ public class InventorySlotController
         _view.Image.gameObject.SetActive(false);
         _view.TextAmount.gameObject.SetActive(false);
         
+            
         slot.ItemChange += onSlotItemIconChange;
         slot.ItemNumberChange += onSlotItemAmountChanged;
 
+        UpdateImageIfNeed(slot);
+            
         view.Icon = slot.Item;
         view.Amount = slot.Amount;
     }
@@ -28,5 +31,14 @@ public class InventorySlotController
         _view.TextAmount.gameObject.SetActive(newAmount > 1);
         
         _view.Amount = newAmount;
+    }
+
+    private void UpdateImageIfNeed(IReadOnlyInventorySlot<Sprite, int> slot)
+    {
+        var inventorySlot = (InventorySlot)slot;
+        if (inventorySlot != null)
+        {
+            inventorySlot.ItemId = inventorySlot.ItemId;
+        }
     }
 }

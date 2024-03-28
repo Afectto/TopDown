@@ -44,6 +44,7 @@ public class WeaponManager : AbstractTargetHandler
         var bullet = Instantiate(bulletPrefab, shootElement.position, Quaternion.identity);
         bullet.SetDamage(damage);
         bullet.GetComponent<MoveToTargetAndDestroy>().SetTarget(_target);
+        Debug.Log("REMOVE BULLET");
         yield return new WaitForSeconds(attackRite);
         _isCanShoot = true;
     }

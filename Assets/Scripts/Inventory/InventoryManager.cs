@@ -14,11 +14,16 @@ public class InventoryManager : MonoBehaviour, IListener
     public void Start()
     {
         AddAllListeners();
-        _inventoryService = new InventoryService();
-
-        var inventoryData = CreateInventory(OWNER, 2, 3);
-        _inventoryService.RegisterInventory(inventoryData);
-
+        var gameStateProvider = new GameStateFileProvider();
+        gameStateProvider.LoadGameState();
+        
+        _inventoryService = new InventoryService(gameStateProvider);
+        var gameState = gameStateProvider.GameState;
+        foreach (var inventoryData in gameState.Inventories)
+        {
+            _inventoryService.RegisterInventory(inventoryData);
+        }
+        
         _screenController = new ScreenController(_inventoryService, _screenView);
         _screenController.OpenInventory(OWNER);
         _currentOwnerId = OWNER;
@@ -50,24 +55,6 @@ public class InventoryManager : MonoBehaviour, IListener
         }
     }
 
-    private InventoryGridData CreateInventory(string ownerId, int sizeX, int sizeY)
-    {
-        var size = new Vector2Int(sizeX, sizeY);
-        var createdInventorySlots = new List<InventorySlotData>();
-        var length = sizeX + sizeY + 1;
-
-        for (int i = 0; i < length; i++)
-        {
-            createdInventorySlots.Add(new InventorySlotData());
-        }
-        var createInventoryData = new InventoryGridData
-        {
-            OwnerID = ownerId,
-            Size = size,
-            SlotsData = createdInventorySlots
-        };
-        return createInventoryData;
-    }
     
     public void OnDestroy()
     {

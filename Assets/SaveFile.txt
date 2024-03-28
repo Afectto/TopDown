@@ -1,0 +1,1 @@
+{"Inventories":[{"OwnerID":"Afecto","SlotsData":[{"itemID":"Ammo Box","amount":1},{"itemID":"","amount":0},{"itemID":"","amount":0},{"itemID":"","amount":0},{"itemID":"","amount":0},{"itemID":"","amount":0}],"Size":{"x":2,"y":3}}]}

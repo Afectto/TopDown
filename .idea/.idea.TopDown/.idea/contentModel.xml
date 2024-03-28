@@ -57,8 +57,9 @@
         <e p="Scenes" t="Include" />
         <e p="SciptableObject" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="ClearSlotButton" t="Include">
+          <e p="Button" t="Include">
             <e p="ClearSlotButton.cs" t="Include" />
+            <e p="ShootButton.cs" t="Include" />
           </e>
           <e p="ComonComponents" t="Include">
             <e p="Health.cs" t="Include" />
@@ -117,6 +118,14 @@
           <e p="player" t="Include">
             <e p="PlayerManager.cs" t="Include" />
             <e p="RotatePlayer.cs" t="Include" />
+          </e>
+          <e p="SaveLoad" t="Include">
+            <e p="GameStateAbstractProvider.cs" t="Include" />
+            <e p="GameStateData.cs" t="Include" />
+            <e p="GameStateFileProvider.cs" t="Include" />
+            <e p="GameStatePlayerPrefsProvider.cs" t="Include" />
+            <e p="IGameStateProvider.cs" t="Include" />
+            <e p="IgameStateSaver.cs" t="Include" />
           </e>
           <e p="ScriptableObject" t="Include">
             <e p="Data" t="Include">
