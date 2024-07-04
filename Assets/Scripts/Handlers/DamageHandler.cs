@@ -3,12 +3,16 @@ using UnityEngine;
 
 public class DamageHandler : MonoBehaviour
 {
-    [SerializeField] private GameObject owner;
-
+    private GameObject _owner;
     public static Action<GameObject, float> OnDamageTaken;
+
+    private void Awake()
+    {
+        _owner = gameObject;
+    }
 
     public void SetDamage(float damage)
     {
-        OnDamageTaken?.Invoke(owner, damage);
+        OnDamageTaken?.Invoke(_owner, damage);
     }
 }

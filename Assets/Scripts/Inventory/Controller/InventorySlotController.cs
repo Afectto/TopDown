@@ -10,7 +10,6 @@ public class InventorySlotController
         _view.Image.gameObject.SetActive(false);
         _view.TextAmount.gameObject.SetActive(false);
         
-            
         slot.ItemChange += onSlotItemIconChange;
         slot.ItemNumberChange += onSlotItemAmountChanged;
 
@@ -18,12 +17,15 @@ public class InventorySlotController
             
         view.Icon = slot.Item;
         view.Amount = slot.Amount;
+        _view.TextAmount.gameObject.SetActive(view.Amount > 1);
     }
 
     private void onSlotItemIconChange(Sprite newIconSprite)
     {
         _view.Image.gameObject.SetActive(newIconSprite != null);
         _view.Icon = newIconSprite;
+        
+        _view.TextAmount.gameObject.SetActive(_view.Amount > 1);
     }
 
     private void onSlotItemAmountChanged(int newAmount)

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class RotatePlayer : AbstractTargetHandler
@@ -24,13 +25,10 @@ public class RotatePlayer : AbstractTargetHandler
 
     private void Flip()
     {
-        if (_target)
-        {
-            var isNeedFlip = _target.position.x < transform.position.x;
-            var localScale = _originalPlayerScale;
-            localScale.x = isNeedFlip ? -_originalPlayerScale.x : _originalPlayerScale.x;
-            skin.transform.localScale = localScale;
-        }
+        var isNeedFlip = _target.position.x < transform.position.x;
+        var localScale = _originalPlayerScale;
+        localScale.x = isNeedFlip ? -_originalPlayerScale.x : _originalPlayerScale.x;
+        skin.transform.localScale = localScale;
     }
 
     private void ResetPayerPosition()

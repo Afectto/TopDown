@@ -2,8 +2,13 @@
 
 public abstract class AbstractTargetHandler : MonoBehaviour, IListener
 {
-    [SerializeField] private GameObject owner;
+    protected GameObject _owner;
     protected Transform _target;
+
+    protected virtual void Awake()
+    {
+        _owner = gameObject;
+    }
 
     public virtual void Start()
     {
@@ -23,7 +28,7 @@ public abstract class AbstractTargetHandler : MonoBehaviour, IListener
 
     private void SetTarget(GameObject thisOwner, Transform target)
     {
-        if (owner == thisOwner)
+        if (_owner == thisOwner)
         {
             _target = target;
         }

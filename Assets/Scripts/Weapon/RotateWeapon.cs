@@ -4,6 +4,11 @@ public class RotateWeapon : AbstractTargetHandler
 {
     private Quaternion _originalGunRotation;
     private Vector3 _originalGunScale;
+    
+    protected override void Awake()
+    {
+        _owner = GetComponentInParent<PlayerManager>().gameObject;
+    }
 
     public override void Start()
     {

@@ -54,6 +54,7 @@
         <e p="Resources" t="Include">
           <e p="Inventory" t="Include" />
         </e>
+        <e p="SaveFile.txt" t="Include" />
         <e p="Scenes" t="Include" />
         <e p="SciptableObject" t="Include" />
         <e p="Scripts" t="Include">
