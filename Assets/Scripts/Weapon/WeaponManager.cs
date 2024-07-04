@@ -12,6 +12,11 @@ public class WeaponManager : AbstractTargetHandler
     public float RadiusToAttack => radiusToAttack;
     private bool _isCanShoot;
 
+    protected override void Awake()
+    {
+        _owner = GetComponentInParent<PlayerManager>().gameObject;
+    }
+    
     public override void Start()
     {
         base.Start();

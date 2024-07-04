@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b69a27b5-3776-4ead-a5d8-e4bb28f1c32e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TopDown/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TopDown/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TopDown/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TopDown/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TopDown/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TopDown/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Handlers/BasedHendlers/AbstractTargetHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Handlers/BasedHendlers/AbstractTargetHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Handlers/DamageHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Handlers/DamageHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Handlers/TargetHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Handlers/TargetHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Controller/InventorySlotController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Controller/InventorySlotController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/RotatePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/RotatePlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/RotateWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/RotateWeapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +73,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoad/GameStateFileProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Controller/InventorySlotController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Handlers/DamageHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Handlers/TargetHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/RotatePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Handlers/BasedHendlers/AbstractTargetHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/RotateWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Handlers/DamageHandler.cs" />
       </list>
     </option>
   </component>
@@ -134,7 +126,7 @@
       <workItem from="1711531924579" duration="44106000" />
       <workItem from="1713285487323" duration="2059000" />
       <workItem from="1714558496675" duration="2105000" />
-      <workItem from="1720103953779" duration="1445000" />
+      <workItem from="1720103953779" duration="2987000" />
     </task>
     <servers />
   </component>
@@ -231,10 +223,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="dock-window-3/0.0.1920.1040@0.0.1920.1040" timestamp="1711619257203" />
-    <state x="821" y="136" width="785" height="534" key="find.popup" timestamp="1720104487796">
+    <state x="425" y="160" width="785" height="534" key="find.popup" timestamp="1720119902141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="821" y="136" width="785" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1720104487796" />
+    <state x="425" y="160" width="785" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1720119902141" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1711557364826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
